@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+	<title>Coda-Slider 2.0</title>
+	<meta http-equiv="Content-Language" content="en-us" />
+	
+	<meta name="author" content="Niall Doherty" />
+	
+	<!-- Begin Stylesheets -->
+		<link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="stylesheets/coda-slider-2.0.css" type="text/css" media="screen" />
+			
+	<!-- End Stylesheets -->
+	
+	<!-- Begin JavaScript -->
+		<script type="text/javascript" src="javascripts/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.coda-slider-2.0.js"></script>
+		 <script type="text/javascript">
+            $().ready(function() {
+                $('#coda-slider-1').codaSlider();
+                $('#coda-slider-2').codaSlider({
+                    autoSlide: true,
+                    autoSlideInterval: 4000,
+                    autoSlideStopWhenClicked: true
+                });
+                $('#coda-slider-3').codaSlider();
+                $('#coda-slider-4').codaSlider();
+				$('#coda-slider-5').codaSlider({
+					dynamicArrows: false,
+					dynamicTabs: false
+				});
+				$('#coda-slider-6').codaSlider({
+                	crossLinking: false,
+					firstPanelToLoad: 3
+				});
+				$('#coda-slider-7').codaSlider({
+					autoHeightEaseDuration: 300,
+					autoHeightEaseFunction: "easeInOutExpo",
+					slideEaseDuration: 300,
+					slideEaseFunction: "easeInOutExpo"
+				});
+				$('#coda-slider-8').codaSlider({
+					autoHeightEaseDuration: 2500,
+					autoHeightEaseFunction: "easeInOutElastic",
+					slideEaseDuration: 2500,
+					slideEaseFunction: "easeInOutElastic"
+				});
+            	$('#coda-slider-9').codaSlider({
+					dynamicArrows: false
+				});
+            });
+         </script>
+	<!-- End JavaScript -->
+	
+</head>
+
+<body class="coda-slider-no-js">
+
+<h1>Coda-Slider 2.0</h1>
+	
+<noscript>
+	<div>
+        <p>Unfortunately your browser does not hava JavaScript capabilities which are required to exploit full functionality of our site. This could be the result of two possible scenarios:</p>
+        <ol>
+            <li>You are using an old web browser, in which case you should upgrade it to a newer version. We recommend the latest version of <a href="http://www.getfirefox.com">Firefox</a>.</li>
+            <li>You have disabled JavaScript in you browser, in which case you will have to enable it to properly use our site. <a href="http://www.google.com/support/bin/answer.py?answer=23852">Learn how to enable JavaScript</a>.</li>
+        </ol>
+    </div>
+</noscript>
+
+<a name="example-3"></a>
+    <h2>Example 3: Cross Linking</h2>
+    
+    <p>The first set of links controls the first slider below. The second set of links controls the second slider. Note that the URL hash changes for each click. This allows you to link to a certain panel from other pages (but be aware that every slider with cross linking enabled will also load the same panel).</p>
+    
+    <p>Cross links for the first slider below: <a class="xtrig" href="#1" rel="coda-slider-3">Panel 1</a> | <a class="xtrig" href="#2" rel="coda-slider-3">Panel 2</a> | <a class="xtrig" href="#3" rel="coda-slider-3">Panel 3</a>
+    <br />Cross links for the second slider below: <a class="xtrig" href="#1" rel="coda-slider-4">Panel 1</a> | <a class="xtrig" href="#2" rel="coda-slider-4">Panel 2</a> | <a class="xtrig" href="#3" rel="coda-slider-4">Panel 3</a></p>
+
+    <div class="coda-slider-wrapper">
+        <div class="coda-slider preload" id="coda-slider-3">
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <h2 class="title">Panel 1</h2>
+                    <p>This slider can be controlled by the first set of links above.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque.</p>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <h2 class="title">Panel 2</h2>
+                    <p>This slider can be controlled by the first set of links above.</p>
+                    <p>Proin nec turpis eget dolor dictum lacinia. Nullam nunc magna, tincidunt eu porta in, faucibus sed magna. Suspendisse laoreet ornare ullamcorper. Nulla in tortor nibh. Pellentesque sed est vitae odio vestibulum aliquet in nec leo.</p>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <h2 class="title">Panel 3</h2>
+                    <p>This slider can be controlled by the first set of links above.</p>
+                    <p>Cras luctus fringilla odio vel hendrerit. Cras pulvinar auctor sollicitudin.</p>
+                </div>
+            </div>
+        </div><!-- .coda-slider -->
+    </div><!-- .coda-slider-wrapper -->
+
+    <div class="coda-slider-wrapper">
+        <div class="coda-slider preload" id="coda-slider-4">
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <h2 class="title">Panel 1</h2>
+                    <p>This slider can be controlled by the second set of links above.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque.</p>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <h2 class="title">Panel 2</h2>
+                    <p>This slider can be controlled by the second set of links above.</p>
+                    <p>Proin nec turpis eget dolor dictum lacinia. Nullam nunc magna, tincidunt eu porta in, faucibus sed magna. Suspendisse laoreet ornare ullamcorper. Nulla in tortor nibh. Pellentesque sed est vitae odio vestibulum aliquet in nec leo.</p>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <h2 class="title">Panel 3</h2>
+                    <p>This slider can be controlled by the second set of links above.</p>
+                    <p>Cras luctus fringilla odio vel hendrerit. Cras pulvinar auctor sollicitudin.</p>
+                </div>
+            </div>
+        </div><!-- .coda-slider -->
+    </div><!-- .coda-slider-wrapper -->
+    
+    <p>Each cross link should have an appropriate class and a rel attribute. The class needs to be "xtrig" by default, but you can specify something different via the settings. The rel value should correspond to the id of the target slider. Example:</p>
+    
+    <pre class="brush: xml;">
+    	<a class="xtrig" href="#1" rel="coda-slider-3">Panel 1</a>
+    </pre>
+    
+    <p>Note that you can also place cross links within a slider (e.g. if you wanted a "Next" link at the end of each slide).</p>
+    
+    <hr />
+</body>
+</html>

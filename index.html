@@ -1,7 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<!-- simplified version; works on legacy browsers -->
+<title>Michaela Henniker-Heaton | Artisan décorateur</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/s3Slider.css" rel="stylesheet" type="text/css" media="screen">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/s3Slider.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#slider').s3Slider({
+            timeOut: 5000
+        });
+    });
+</script>
+<!--[if IE]>
+<script>
+document.createElement("header");
+document.createElement("footer");
+document.createElement("nav");
+document.createElement("article");
+document.createElement("section");
+</script>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19328134-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<div id="global">
+<header>
+    <logo>
+    	<a href="index.html"><img src="images/logo_mhh.png" alt="" width="250px" height="35px" style="border:none;"/></a>
+	</logo>
+	<nav>  
+    <ul>  
+        <li><a href="index.html">HOME</a></li>  
+        <li><a href="showcase.html">SHOWCASE</a></li>  
+        <li><a href="press.html">PRESS</a></li>  
+        <li><a href="about.html">ABOUT</a></li>  
+        <li><a href="contact.html">CONTACT</a></li> 
+    </ul>  
+	</nav> 
+</header>
+<section>
+<div id="slider">
+                    <ul id="sliderContent">
+                        <li class="sliderImage">
+                            <img src="images/salledebain.png" />
+                            <span class="bottom"><strong>SALLE DE BAIN CONTEMPORAINE</strong><br />Le mur, 20 m2, est peint avec un ciel marin et des oiseaux de l'Océan Atlantique, réalisé en peinture acrylique et verni. Le Marais, Paris IVe.</span>
+                        </li>
+                        <li class="sliderImage">
+                            <img src="images/lateralthinking.jpg" />
+                            <span class="bottom"><strong>TABLEAU 2m x 1.4m</strong><br />dont l'objectif est de détendre l'atmosphère avec humour, réalisée en peinture acrylique sur toile. Pour une salle de conférence d'une multinationale. Sloane Street, Londres SW1.</span>
+                        </li>
+                        <li class="sliderImage">
+                            <img src="images/zinzin.jpg" />
+                            <span class="bottom"><strong>DECOR “Zinzins de l'espace“</strong><br />réalisé à New-York dans le Javits Center pour les films Gaumont Multimedia en association avec ProSieben, Allemagne. Peint en acrylique sur MDF.</span>
+                        </li>
+                        <div class="clear sliderImage"></div>
+                    </ul>
+</div>
+</section>
+<footer>
+<article>Réalisation de décors du XVIII à nos jours:<br />
+Peinture décoratives<span style="color:#009ab2;"> / </span>trompe l'oeil<span style="color:#009ab2;"> / </span>toutes patines<span style="color:#009ab2;"> / </span>imitations marbres, bois & pierres</article></footer>
+<note>©Michaela Henniker-Heaton 2010 | details.ch</note>
+</div>
 </body>
 </html>
